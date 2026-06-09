@@ -1,0 +1,188 @@
+body {    
+    background-color: #0b1a2a;    
+    color: #ffffff;    
+    margin: 0;    
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {    
+    background-color: #0d2538;    
+    border-bottom: 2px solid #1e3a50;
+    padding: 10px 0;
+}
+
+.navbar-logo {
+    height: 45px;
+    width: auto;
+}
+
+nav.nav a.nav-link {
+    font-weight: 600;
+    color: #a3b8cc;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+nav a.nav-link:hover {
+    color: #4caf50;
+    background-color: rgba(76, 175, 80, 0.1);
+}
+
+.dashboard-container {    
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    flex: 1;
+}
+
+.painel-lateral {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 320px;
+    flex-shrink: 0;
+}
+
+.painel-lateral .card {    
+    background-color: #162d3f;    
+    border: 1px solid #234560;    
+    border-radius: 12px;    
+    color: #ffffff;
+}
+
+.painel-lateral .card h2 {    
+    color: #4caf50;    
+    font-size: 1.05rem;    
+    font-weight: 600;
+    border-bottom: 1px solid #234560;
+    padding-bottom: 6px;
+    margin-bottom: 10px;
+}
+
+.form-control {
+    background-color: #0d2538;
+    border: 1px solid #234560;
+    color: #ffffff;
+}
+
+.form-control:focus {
+    background-color: #0d2538;
+    border-color: #4caf50;
+    color: #ffffff;
+    box-shadow: 0 0 0 0.25rem rgba(76, 175, 80, 0.25);
+}
+
+.missao-item {    
+    background-color: #1c3a4f;    
+    border: 1px solid #2d5a7a;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.font-apoios {
+    padding-left: 8px;
+    white-space: nowrap;
+}
+
+.alert-danger {    
+    background-color: #441a1a;    
+    border: 1px solid #ff4d4d;    
+    color: #ffb3b3;
+}
+
+.alert-warning {    
+    background-color: #44331a;    
+    border: 1px solid #ffcc00;    
+    color: #ffe066;
+}
+
+.orbita-principal {    
+    background-color: #0d2538;    
+    border-radius: 12px;    
+    padding: 20px;    
+    border: 1px solid #1e3a50;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.globo-container {    
+    position: relative;    
+    width: 100%;    
+    flex: 1;
+    min-height: 380px;
+    display: flex;    
+    justify-content: center;    
+    align-items: center;    
+    background: radial-gradient(circle, #162d3f 0%, #0b1a2a 100%);    
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.globo {    
+    width: 180px;    
+    height: 180px;    
+    background: radial-gradient(circle at 30% 30%, #4caf50, #1b5e20);    
+    border-radius: 50%;    
+    box-shadow: 0 0 50px rgba(76, 175, 80, 0.3);
+    position: relative;
+}
+
+.orbita1, .orbita2 {    
+    position: absolute;    
+    border: 1px dashed rgba(255, 255, 255, 0.1);    
+    border-radius: 50%;
+}
+
+.orbita1 { width: 260px; height: 260px; }
+.orbita2 { width: 340px; height: 340px; }
+
+.satelite {    
+    width: 12px;    
+    height: 12px;    
+    background-color: #81c784;    
+    border-radius: 50%;    
+    position: absolute;    
+    box-shadow: 0 0 10px #4caf50;
+}
+
+.sat1 { top: 15%; left: 50%; }
+.sat2 { bottom: 20%; right: 15%; }
+
+.ponto {    
+    width: 10px;    
+    height: 10px;    
+    border-radius: 50%;    
+    position: absolute;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+.vermelho { background-color: #ff4d4d; top: 35%; left: 35%; }
+.azul { background-color: #4fc3f7; top: 60%; left: 55%; }
+.verde { background-color: #a3e635; top: 45%; left: 65%; }
+
+footer {
+    background-color: #0d2538;
+    border-top: 1px solid #1e3a50;
+    color: #a3b8cc;
+}
+
+@media (max-width: 768px) {
+    .dashboard-container {
+        flex-direction: column;
+    }
+    .painel-lateral {
+        width: 100%;
+    }
+    .globo-container {
+        min-height: 300px;
+    }
+}
